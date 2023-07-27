@@ -1,12 +1,12 @@
 {
-    "name": "CheckList",
+    "name": "To-Do List",
     "version": "1.0.0",
-    "description": "CheckList Manager",
+    "description": "Edit, create, delete and view your task list - with high and low priority included",
     "manifest_version": 3,
     "author": "QueZera",
     "action":{
         "default_popup": "index.html",
-        "default_title": "My CheckList"
+        "default_title": "My To-Do List"
     },
     "permissions": [
         "storage"

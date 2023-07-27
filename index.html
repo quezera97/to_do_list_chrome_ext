@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>CheckList</title>
-
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-
-    <div id="title">
-        <h2>CheckList</h2>
-    </div>
-
-    <div id="main-container">
-        <button id="add-todo-btn">+</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <div id="todo-input-form">
+        <title>CheckList</title>
+
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+        <div>
+            <h1 class="purples">Task List</h1>
+        </div>
+        
+        <div id="main-container">
+            <button id="add-todo-btn">+</button>
             
-            <div class="task-form">
-                <textarea id="task-input-high" class="task-input" rows="4" placeholder="Enter High Priority Task"></textarea>
-                <button class="add-task" id="add-task-btn-high">Add Task</button>
+            <div id="todo-input-form">
+                
+                <div class="task-form">
+                    <textarea id="task-input-high" class="task-input" rows="4" placeholder="Enter High Priority Task"></textarea>
+                    <button class="add-task" id="add-task-btn-high">Add Task</button>
+                </div>
+        
+                <div class="task-form">
+                    <textarea id="task-input-low" class="task-input" rows="4" placeholder="Enter Low Priority Task"></textarea>
+                    <button class="add-task" id="add-task-btn-low">Add Task</button>
+                </div>
+            
             </div>
-    
-            <div class="task-form">
-                <textarea id="task-input-low" class="task-input" rows="4" placeholder="Enter Low Priority Task"></textarea>
-                <button class="add-task" id="add-task-btn-low">Add Task</button>
+
+            <div class="modal" id="modal">
+                
+                <div id="close-btn">
+                    &times;
+                </div>
+                
+                <div class="task-form task-form-modal">
+                    <textarea id="task-input-updated" class="task-input" rows="4" placeholder="Updated Task"></textarea>
+                    <input type="hidden" id="hidden-index-updated">
+                    <button class="add-task" id="update-task-btn">Update</button>
+                </div>
+        
             </div>
         
-        </div>
+            <div class="task-list" id="task-list">
 
-        <div class="modal" id="modal">
-            
-            <div id="close-btn">
-                &times;
             </div>
-            
-            <div class="task-form task-form-modal">
-                <textarea id="task-input-updated" class="task-input" rows="4" placeholder="Updated Task"></textarea>
-                <input type="hidden" id="hidden-index-updated">
-                <button class="add-task" id="update-task-btn">Update</button>
-            </div>
-      
         </div>
-      
-        <div class="task-list" id="task-list">
 
-        </div>
-    </div>
+        <script src="handleTabKey.js"></script>
 
+        <script src="script.js"></script>
 
-
-
-    <script src="handleTabKey.js"></script>
-
-    <script src="script.js"></script>
-
-</body>
+    </body>
 </html>
 
 <!-- Chrome extension requires a manifest.json -->

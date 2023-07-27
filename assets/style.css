@@ -3,9 +3,19 @@
     padding: 0;
     margin: 0;
 }
-#title{
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+  
+h1 {
+    margin: 0;
+    font-family: 'Rocher';
     text-align: center;
+    font-size: 40px;
     width: 600px;
+    color: var(--Purples);
 }
 
 #main-container{
