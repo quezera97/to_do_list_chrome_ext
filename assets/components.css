@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+body {
+    background-color: #B70404;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+  
+h1 {
+    margin-left: 10px;
+    font-family: 'Rocher';
+    text-align: left;
+    font-size: 40px;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 3px rgba(141, 139, 139, 0.59);
+    color: white;
+    cursor: pointer;
+    background-color: #03A9F4;
+}
+button:hover{
+    background-color: rgba(195, 200, 201, 0.887);
+}
+
+input,textarea{
+    padding: 9px;
+}
