@@ -1,6 +1,6 @@
 #main-container{
     padding: 5px;
-    min-height: 100px;
+    min-height: 300px;
     width: 600px;
     box-shadow: 0 0 5px #878585b6;
     margin: 5px;
@@ -10,7 +10,6 @@
 .add-task{
     font-family: 'Rocher';
     margin-top: 10px;
-    /* background-color: #F79327; */
     color: black;
     
 }
@@ -51,7 +50,7 @@
 
 .modal{
     position: absolute;
-    height: 700px;
+    height: 100%;
     width: 600px;
     top: 0;
     left: 0;
@@ -62,7 +61,8 @@
     display: none;
 }
 .task-form-modal{
-    padding: 30% 5px;
+    padding: 5px;
+    margin-top: 50px;
 }
 #close-btn{
     float: right;

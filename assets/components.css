@@ -32,6 +32,6 @@ button:hover{
     background-color: rgba(195, 200, 201, 0.887);
 }
 
-input,textarea{
+input, textarea{
     padding: 9px;
 }
