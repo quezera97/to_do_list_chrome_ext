@@ -141,8 +141,8 @@ const loadView = () => {
         delTaskBtn.textContent = 'Delete';
 
         delTaskBtn.addEventListener("click", () => {
-            let x = prompt("Are you sure? This can't be undone!\n\nWrite 1 to delete.");
-            if(x == 1){
+            let x = prompt("Are you sure? This can't be undone!\n\nWrite y / yes to delete.");
+            if(x == 'yes' || x == 'y' || x == 'Y' || x == 'Yes'){
                 taskList.splice(index, 1);
                 localStorage.setItem("todo", JSON.stringify(taskList));
                 loadView();
@@ -224,8 +224,8 @@ closeBtn.addEventListener("click", () => {
 
 updateTaskBtn.addEventListener("click", () => {
 
-    let x = prompt("Are you sure to edit? This can't be undone!\n\nWrite 1 to edit.");
-    if(x == 1){
+    let x = prompt("Are you sure to edit? This can't be undone!\n\nWrite y / yes to edit.");
+    if(x == 'yes' || x == 'y' || x == 'Y' || x == 'Yes'){
         const ind = document.getElementById('hidden-index-updated').value;
         const updatedTask = document.getElementById('task-input-updated').value;
 
