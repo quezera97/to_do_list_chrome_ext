@@ -18,9 +18,7 @@
         </div>
         
         <div id="main-container">
-            
             <div id="todo-input-form">
-                
                 <div class="task-form">
                     <textarea id="task-input-high" class="task-input" rows="4" placeholder="Enter High Priority Task"></textarea>
                     <button class="add-task" id="add-task-btn-high">Add Task</button>
@@ -30,11 +28,9 @@
                     <textarea id="task-input-low" class="task-input" rows="4" placeholder="Enter Low Priority Task"></textarea>
                     <button class="add-task" id="add-task-btn-low">Add Task</button>
                 </div>
-            
             </div>
 
             <div class="modal" id="modal">
-                
                 <div id="close-btn">
                     &times;
                 </div>
@@ -44,17 +40,14 @@
                     <input type="hidden" id="hidden-index-updated">
                     <button class="add-task" id="update-task-btn">Update</button>
                 </div>
-        
             </div>
         
-            <div class="task-list" id="task-list">
-
-            </div>
+            <div class="task-list" id="task-list"></div>
         </div>
 
-        <script src="handleTabKey.js"></script>
-
         <script src="script.js"></script>
+        <script src="key_handle.js"></script>
+        <script src="timestamp.js"></script>
     </body>
 </html>
 

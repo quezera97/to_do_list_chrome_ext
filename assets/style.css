@@ -8,7 +8,6 @@
 }
 
 .add-task{
-    font-family: 'Rocher';
     margin-top: 10px;
     color: black;
     
@@ -93,7 +92,7 @@
     background-color: rgba(179, 179, 179, 0.629);
 }
 .task{
-    white-space: pre-wrap; 
+    white-space: pre-wrap;
     word-wrap: break-word;
     width: 100%;
     margin-bottom: 5px;
@@ -130,20 +129,17 @@
     color: #51656e8d;
 }
 .del-task-btn{
-    font-family: 'Rocher';
     color: black;
     background-color: #d21414a9;
 }
 .edit-task-btn{
-    font-family: 'Rocher';
     color: black;
 }
 .done-btn{
-    font-family: 'Rocher';
     color: black;
     background-color: #3bbe8c;
 }
-.move-up-btn,.move-down-btn{
+.high-prio-btn,.low-prio-btn{
     color: black;
-    background-color:#d39141d4;
+    background-color:#d35941d4;
 }

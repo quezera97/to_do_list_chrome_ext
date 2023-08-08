@@ -7,37 +7,16 @@ const addTaskBtnLow = document.getElementById('add-task-btn-low');
 
 const addToDoFormBtn = document.getElementById('add-todo-btn');
 
-taskList = []; 
+taskList = [];
+  
+const swap = (currentIndex, afterBeforeIndex) => {
 
-const getTimeStamp = () => {
-    
-    const currentDate = new Date();
-    
-    const currentTime = currentDate.toLocaleString('en-BD', {
-        hour: 'numeric',
-        minute: 'numeric',
-        hour12: true
-    });
-    
-    const formattedDate = currentDate.toLocaleDateString('en-BD', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-    });
-  
-    const formattedTimeStamp = `${formattedDate} | ${currentTime}`;
-  
-    return formattedTimeStamp;
-};
-  
-const swap = (i, j) => {
-
-    if(i<0 || j<0)
+    if(currentIndex < 0 || afterBeforeIndex < 0)
         return;
-    else if(i >= taskList.length || j >= taskList.length)
+    else if(currentIndex >= taskList.length || afterBeforeIndex >= taskList.length)
         return;
 
-    [taskList[i], taskList[j]] = [taskList[j], taskList[i]];
+    [taskList[currentIndex], taskList[afterBeforeIndex]] = [taskList[afterBeforeIndex], taskList[currentIndex]];
 };
 
 const loadView = () => {
@@ -85,7 +64,7 @@ const loadView = () => {
 
         const updatedTimeStamp = document.createElement("span");
         updatedTimeStamp.setAttribute("class", Element.isDone ? "timestamp done" : "timestamp");
-        updatedTimeStamp.innerText = (Element.updatedAt == null) ? "" : ("[Updated: " + Element.updatedAt + "]");
+        updatedTimeStamp.innerText = (Element.updatedAt == null) ? "" : ("[ Updated: " + Element.updatedAt + " ]");
 
         //controller button group
         const controllerBtns = document.createElement("span");
@@ -108,8 +87,8 @@ const loadView = () => {
 
         //move up button
         const moveUpBtn = document.createElement('button');
-        moveUpBtn.className = 'move-up-btn';
-        moveUpBtn.textContent = '↑';
+        moveUpBtn.className = 'high-prio-btn';
+        moveUpBtn.textContent = 'High';
         moveUpBtn.addEventListener("click", () => {
             if(taskList[index].isDone){
                 alert("The task is completed. Completed task cannot be moved!");
@@ -124,8 +103,8 @@ const loadView = () => {
 
         //move down button
         const moveDownBtn = document.createElement('button');
-        moveDownBtn.className = 'move-down-btn';
-        moveDownBtn.textContent = '↓';
+        moveDownBtn.className = 'low-prio-btn';
+        moveDownBtn.textContent = 'Low';
         moveDownBtn.addEventListener("click", () => {
             if(taskList[index].isDone){
                 alert("The task is completed. Completed task cannot be moved!");
@@ -181,7 +160,7 @@ const loadView = () => {
         if(taskList[index].isDone){
             const completionTime = document.createElement("div");
             completionTime.setAttribute("class","timeStamp");
-            completionTime.innerText = "[Completed: " + taskList[index].completionTime + "]";
+            completionTime.innerText = "[ Completed: " + taskList[index].completionTime + " ]";
             taskController.appendChild(completionTime);
         }
          
