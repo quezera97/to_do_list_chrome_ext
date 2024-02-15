@@ -1,4 +1,4 @@
-## Do Nothing Chrome Extension
+## To-Do List Chrome Extension
 
 ### Overview
 
