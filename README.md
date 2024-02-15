@@ -10,9 +10,9 @@
 </p>
 
 ### Screenshots:
-<img src="https://github.com/quezera97/task_list_chrome_ext/assets/66286710/e025cfc6-ddb8-4d8a-9d7d-10bb49c78773" width="200">
-<img src="https://github.com/quezera97/task_list_chrome_ext/assets/66286710/f3bac8d7-92e5-43af-877a-f18f45483c42" width="200">
-<img src="https://github.com/quezera97/task_list_chrome_ext/assets/66286710/135f6e1e-f3fb-4396-8664-de3b4da52270" width="200">
+<img src="https://github.com/quezera97/task_list_chrome_ext/assets/66286710/e025cfc6-ddb8-4d8a-9d7d-10bb49c78773" width="400">
+<img src="https://github.com/quezera97/task_list_chrome_ext/assets/66286710/f3bac8d7-92e5-43af-877a-f18f45483c42" width="400">
+<img src="https://github.com/quezera97/task_list_chrome_ext/assets/66286710/135f6e1e-f3fb-4396-8664-de3b4da52270" width="400">
 
 ### Description:
 
