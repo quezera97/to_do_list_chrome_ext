@@ -1,4 +1,4 @@
-## To-Do List Chrome Extension
+## <a href="https://chromewebstore.google.com/detail/to-do-list/bdnoddliddpkjdkmlhamdkfghjieekio" target="_blank">To-Do List</a> Chrome Extension
 
 ### Overview
 
